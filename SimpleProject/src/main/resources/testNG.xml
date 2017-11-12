@@ -12,7 +12,13 @@
   
   <test name="Parallel runs2" >
     <classes>
-       <class name="tests.Test001" />
+       <class name="tests.Test2" />
+    </classes>
+  </test>
+  
+   <test name="Parallel runs3" >
+    <classes>
+       <class name="tests.Test3" />
     </classes>
   </test>
   

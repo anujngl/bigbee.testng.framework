@@ -1,17 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="468" started-at="2017-11-12T18:14:55Z" finished-at="2017-11-12T18:14:55Z">
+  <suite name="Suite1" duration-ms="606" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
     <groups>
     </groups>
-    <test name="Parallel runs1" duration-ms="436" started-at="2017-11-12T18:14:55Z" finished-at="2017-11-12T18:14:55Z">
-      <class name="tests.Test001">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test001@548a9f61]" name="classSetUp" is-config="true" duration-ms="7" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+    <test name="Parallel runs2" duration-ms="521" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
+      <class name="tests.Test2">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test2@475530b9]" name="classSetUp" is-config="true" duration-ms="9" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="4" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test2.Test11()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method status="PASS" signature="Test11()[pri:0, instance:tests.Test2@475530b9]" name="Test11" duration-ms="6" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test11 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="253" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="46" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test2.Test21()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method status="PASS" signature="Test21()[pri:0, instance:tests.Test2@475530b9]" name="Test21" duration-ms="2" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test21 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="82" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="36" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.Test2.Test31()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method status="PASS" signature="Test31()[pri:0, instance:tests.Test2@475530b9]" name="Test31" duration-ms="11" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test31 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="48" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.Test2 -->
+    </test> <!-- Parallel runs2 -->
+    <test name="Parallel runs1" duration-ms="551" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
+      <class name="tests.Test001">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test001@548a9f61]" name="classSetUp" is-config="true" duration-ms="9" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="4" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
           <params>
             <param index="0">
               <value>
@@ -22,19 +87,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test001@548a9f61]" name="Test1" duration-ms="6" started-at="2017-11-12T23:44:55Z" description="This is test01" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test001@548a9f61]" name="Test1" duration-ms="8" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="245" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="295" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test001@548a9f61]" name="Test2" duration-ms="3" started-at="2017-11-12T23:44:55Z" description="This is test02" finished-at="2017-11-12T23:44:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="45" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <params>
             <param index="0">
               <value>
@@ -45,11 +106,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="72" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test001@548a9f61]" name="Test2" duration-ms="1" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="63" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test3()[pri:0, instance:tests.Test001@548a9f61]" name="Test3" duration-ms="3" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <params>
             <param index="0">
               <value>
@@ -60,80 +129,76 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test3()[pri:0, instance:tests.Test001@548a9f61]" name="Test3" duration-ms="4" started-at="2017-11-12T23:44:55Z" description="This is test03" finished-at="2017-11-12T23:44:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="74" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="59" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.Test001 -->
     </test> <!-- Parallel runs1 -->
-    <test name="Parallel runs2" duration-ms="468" started-at="2017-11-12T18:14:55Z" finished-at="2017-11-12T18:14:55Z">
-      <class name="tests.Test001">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test001@2b98378d]" name="classSetUp" is-config="true" duration-ms="7" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+    <test name="Parallel runs3" duration-ms="606" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
+      <class name="tests.Test3">
+        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test3@28d25987]" name="classSetUp" is-config="true" duration-ms="8" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@2b98378d]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test001.Test1()]]>
+                <![CDATA[public void tests.Test3.Test1()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test001@2b98378d]" name="Test1" duration-ms="6" started-at="2017-11-12T23:44:55Z" description="This is test01" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test3@28d25987]" name="Test1" duration-ms="6" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@2b98378d]" name="afterMethod" is-config="true" duration-ms="192" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="351" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@2b98378d]" name="methodSetup" is-config="true" duration-ms="53" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="69" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test001.Test2()]]>
+                <![CDATA[public void tests.Test3.Test2()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test001@2b98378d]" name="Test2" duration-ms="34" started-at="2017-11-12T23:44:55Z" description="This is test02" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test3@28d25987]" name="Test2" duration-ms="26" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@2b98378d]" name="afterMethod" is-config="true" duration-ms="86" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="88" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@2b98378d]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="Test33()[pri:0, instance:tests.Test3@28d25987]" name="Test33" duration-ms="3" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test33 -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test001.Test3()]]>
+                <![CDATA[public void tests.Test3.Test33()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test3()[pri:0, instance:tests.Test001@2b98378d]" name="Test3" duration-ms="2" started-at="2017-11-12T23:44:55Z" description="This is test03" finished-at="2017-11-12T23:44:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@2b98378d]" name="afterMethod" is-config="true" duration-ms="61" started-at="2017-11-12T23:44:55Z" finished-at="2017-11-12T23:44:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="23" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- tests.Test001 -->
-    </test> <!-- Parallel runs2 -->
+      </class> <!-- tests.Test3 -->
+    </test> <!-- Parallel runs3 -->
   </suite> <!-- Suite1 -->
 </testng-results>
