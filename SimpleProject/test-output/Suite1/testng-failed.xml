@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="listeners.SuiteListener"/>
+  </listeners>
+  <test name="Mock Test 2(failed)">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="tests.MockTest">
+        <methods>
+          <include name="methodSetup"/>
+          <include name="methodSetup"/>
+          <include name="classSetUp"/>
+          <include name="classSetUp"/>
+          <include name="LaunchGoogle"/>
+          <include name="closeDriver"/>
+          <include name="closeDriver"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.MockTest -->
+    </classes>
+  </test> <!-- Mock Test 2(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

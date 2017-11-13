@@ -1,5 +1,6 @@
 package reporting;
 
+import java.io.File;
 import java.util.Locale;
 
 import com.relevantcodes.extentreports.DisplayOrder;
@@ -16,7 +17,7 @@ public class Reporter {
 	{
 		if(reporter == null)
 			reporter = new ExtentReports(filePath);
-		
+			reporter.loadConfig(new File(System.getProperty("user.dir")+"/src/test/resources/extent-config.xml"));
 	}
 	
 	public static void createReporter(String filePath, boolean replaceExisting)

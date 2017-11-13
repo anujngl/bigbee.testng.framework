@@ -1,204 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="606" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
+  <suite name="Suite1" duration-ms="18298" started-at="2017-11-13T17:15:29Z" finished-at="2017-11-13T17:15:47Z">
     <groups>
     </groups>
-    <test name="Parallel runs2" duration-ms="521" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
-      <class name="tests.Test2">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test2@475530b9]" name="classSetUp" is-config="true" duration-ms="9" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
+    <test name="Mock Test 1" duration-ms="10628" started-at="2017-11-13T17:15:29Z" finished-at="2017-11-13T17:15:40Z">
+      <class name="tests.MockTest">
+        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.MockTest@5c7fa833]" name="classSetUp" is-config="true" duration-ms="4519" started-at="2017-11-13T22:45:29Z" finished-at="2017-11-13T22:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="4" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.MockTest@5c7fa833]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-13T22:45:34Z" finished-at="2017-11-13T22:45:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test2.Test11()]]>
+                <![CDATA[public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test11()[pri:0, instance:tests.Test2@475530b9]" name="Test11" duration-ms="6" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
+        <test-method status="PASS" signature="LaunchGoogle()[pri:0, instance:tests.MockTest@5c7fa833]" name="LaunchGoogle" duration-ms="5578" started-at="2017-11-13T22:45:34Z" description="This is a mock test to verify the framework" finished-at="2017-11-13T22:45:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test11 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="253" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
+        </test-method> <!-- LaunchGoogle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.MockTest@5c7fa833]" name="afterMethod" is-config="true" duration-ms="257" started-at="2017-11-13T22:45:39Z" finished-at="2017-11-13T22:45:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="46" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.MockTest@5c7fa833]" name="closeDriver" is-config="true" duration-ms="239" started-at="2017-11-13T22:45:39Z" finished-at="2017-11-13T22:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- tests.MockTest -->
+    </test> <!-- Mock Test 1 -->
+    <test name="Mock Test 2" duration-ms="7619" started-at="2017-11-13T17:15:40Z" finished-at="2017-11-13T17:15:47Z">
+      <class name="tests.MockTest">
+        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.MockTest@3ffc5af1]" name="classSetUp" is-config="true" duration-ms="6835" started-at="2017-11-13T22:45:40Z" finished-at="2017-11-13T22:45:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test2.Test21()]]>
+                <![CDATA[ie]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test21()[pri:0, instance:tests.Test2@475530b9]" name="Test21" duration-ms="2" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test21 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="82" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test2@475530b9]" name="methodSetup" is-config="true" duration-ms="36" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test2.Test31()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test31()[pri:0, instance:tests.Test2@475530b9]" name="Test31" duration-ms="11" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test31 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test2@475530b9]" name="afterMethod" is-config="true" duration-ms="48" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.Test2 -->
-    </test> <!-- Parallel runs2 -->
-    <test name="Parallel runs1" duration-ms="551" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
-      <class name="tests.Test001">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test001@548a9f61]" name="classSetUp" is-config="true" duration-ms="9" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="4" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
+        <test-method status="FAIL" signature="LaunchGoogle()[pri:0, instance:tests.MockTest@3ffc5af1]" name="LaunchGoogle" duration-ms="155" started-at="2017-11-13T22:45:46Z" description="This is a mock test to verify the framework" finished-at="2017-11-13T22:45:47Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Currently focused window has been closed.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'LAPTOP-RVMC81Q7', ip: '192.168.43.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41819/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
+*** Element info: {Using=id, value=lst-ib}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
+System info: host: 'LAPTOP-RVMC81Q7', ip: '192.168.43.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41819/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
+*** Element info: {Using=id, value=lst-ib}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at tests.MockTest.LaunchGoogle(MockTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchGoogle -->
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.MockTest@3ffc5af1]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-13T22:45:46Z" finished-at="2017-11-13T22:45:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.Test001.Test1()]]>
+                <![CDATA[public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test001@548a9f61]" name="Test1" duration-ms="8" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="295" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.MockTest@3ffc5af1]" name="afterMethod" is-config="true" duration-ms="93" started-at="2017-11-13T22:45:47Z" finished-at="2017-11-13T22:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="45" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test001.Test2()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.MockTest@3ffc5af1]" name="closeDriver" is-config="true" duration-ms="530" started-at="2017-11-13T22:45:47Z" finished-at="2017-11-13T22:45:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test001@548a9f61]" name="Test2" duration-ms="1" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="63" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="Test3()[pri:0, instance:tests.Test001@548a9f61]" name="Test3" duration-ms="3" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test3 -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test001@548a9f61]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test001.Test3()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test001@548a9f61]" name="afterMethod" is-config="true" duration-ms="59" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.Test001 -->
-    </test> <!-- Parallel runs1 -->
-    <test name="Parallel runs3" duration-ms="606" started-at="2017-11-12T18:22:21Z" finished-at="2017-11-12T18:22:22Z">
-      <class name="tests.Test3">
-        <test-method status="PASS" signature="classSetUp()[pri:0, instance:tests.Test3@28d25987]" name="classSetUp" is-config="true" duration-ms="8" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test3.Test1()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:tests.Test3@28d25987]" name="Test1" duration-ms="6" started-at="2017-11-12T23:52:21Z" description="This is test01" finished-at="2017-11-12T23:52:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="351" started-at="2017-11-12T23:52:21Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="69" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test3.Test2()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:tests.Test3@28d25987]" name="Test2" duration-ms="26" started-at="2017-11-12T23:52:22Z" description="This is test02" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="88" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="Test33()[pri:0, instance:tests.Test3@28d25987]" name="Test33" duration-ms="3" started-at="2017-11-12T23:52:22Z" description="This is test03" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Test33 -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.Test3@28d25987]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.Test3.Test33()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test3@28d25987]" name="afterMethod" is-config="true" duration-ms="23" started-at="2017-11-12T23:52:22Z" finished-at="2017-11-12T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.Test3 -->
-    </test> <!-- Parallel runs3 -->
+        </test-method> <!-- closeDriver -->
+      </class> <!-- tests.MockTest -->
+    </test> <!-- Mock Test 2 -->
   </suite> <!-- Suite1 -->
 </testng-results>

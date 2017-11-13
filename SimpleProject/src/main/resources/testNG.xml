@@ -1,24 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite1" verbose="1" parallel="tests">
+<suite name="Suite1" verbose="1" parallel="none">
   <listeners>
     <listener class-name="listeners.SuiteListener" />
   </listeners>
-
-  <test name="Parallel runs1" >
+  <test name="Mock Test 1" >
+  	<parameter name="browser" value="firefox"/>
     <classes>
-       <class name="tests.Test001" />
+       <class name="tests.MockTest" />
     </classes>
   </test>
   
-  <test name="Parallel runs2" >
+    <test name="Mock Test 2" >
+  	<parameter name="browser" value="ie"/>
     <classes>
-       <class name="tests.Test2" />
-    </classes>
-  </test>
-  
-   <test name="Parallel runs3" >
-    <classes>
-       <class name="tests.Test3" />
+       <class name="tests.MockTest" />
     </classes>
   </test>
   

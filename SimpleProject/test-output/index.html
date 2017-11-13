@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite1">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite1">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.MockTest" hash-for-method="LaunchGoogle">LaunchGoogle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,47 +116,7 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test001" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test3" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test2" hash-for-method="Test11">Test11</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test001" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test3" hash-for-method="Test2">Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test2" hash-for-method="Test21">Test21</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test001" hash-for-method="Test3">Test3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test2" hash-for-method="Test31">Test31</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.Test3" hash-for-method="Test33">Test33</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="tests.MockTest" hash-for-method="LaunchGoogle">LaunchGoogle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -157,107 +131,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
-          <div class="suite-Suite1-class-passed">
+          <div class="suite-Suite1-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.Test2</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.MockTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test11">
-                  </a> <!-- Test11 -->
-                  <span class="method-name">Test11</span>
+                  <a name="LaunchGoogle">
+                  </a> <!-- LaunchGoogle -->
+                  <span class="method-name">LaunchGoogle</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:01:39.354Z&apos;
+System info: host: &apos;LAPTOP-RVMC81Q7&apos;, ip: &apos;192.168.43.179&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41819/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
+*** Element info: {Using=id, value=lst-ib}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at tests.MockTest.LaunchGoogle(MockTest.java:25)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(This is test01)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test21">
-                  </a> <!-- Test21 -->
-                  <span class="method-name">Test21</span>
-                  <em>
-(This is test02)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test31">
-                  </a> <!-- Test31 -->
-                  <span class="method-name">Test31</span>
-                  <em>
-(This is test03)                  </em>
+(This is a mock test to verify the framework)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
+          </div> <!-- suite-Suite1-class-failed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.Test001</span>
+              <span class="class-name">tests.MockTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
+                  <a name="LaunchGoogle">
+                  </a> <!-- LaunchGoogle -->
+                  <span class="method-name">LaunchGoogle</span>
                   <em>
-(This is test01)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test2">
-                  </a> <!-- Test2 -->
-                  <span class="method-name">Test2</span>
-                  <em>
-(This is test02)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test3">
-                  </a> <!-- Test3 -->
-                  <span class="method-name">Test3</span>
-                  <em>
-(This is test03)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite1-class-passed -->
-          <div class="suite-Suite1-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.Test3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
-                  <em>
-(This is test01)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test2">
-                  </a> <!-- Test2 -->
-                  <span class="method-name">Test2</span>
-                  <em>
-(This is test02)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Test33">
-                  </a> <!-- Test33 -->
-                  <span class="method-name">Test33</span>
-                  <em>
-(This is test03)                  </em>
+(This is a mock test to verify the framework)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,25 +194,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;listeners.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Parallel runs1&quot;&gt;
+  &lt;test name=&quot;Mock Test 1&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Test001&quot;/&gt;
+      &lt;class name=&quot;tests.MockTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Parallel runs1 --&gt;
-  &lt;test name=&quot;Parallel runs2&quot;&gt;
+  &lt;/test&gt; &lt;!-- Mock Test 1 --&gt;
+  &lt;test name=&quot;Mock Test 2&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;ie&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Test2&quot;/&gt;
+      &lt;class name=&quot;tests.MockTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Parallel runs2 --&gt;
-  &lt;test name=&quot;Parallel runs3&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.Test3&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Parallel runs3 --&gt;
+  &lt;/test&gt; &lt;!-- Mock Test 2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -301,13 +221,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Parallel runs1 (1 class)</span>
+                <span class="test-name">Mock Test 1 (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Parallel runs2 (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Parallel runs3 (1 class)</span>
+                <span class="test-name">Mock Test 2 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -333,48 +250,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test2')
-data.setCell(0, 2, 'tests.Test3')
-data.setCell(0, 3, 26);
+data.setCell(0, 1, 'LaunchGoogle')
+data.setCell(0, 2, 'tests.MockTest')
+data.setCell(0, 3, 5578);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test31')
-data.setCell(1, 2, 'tests.Test2')
-data.setCell(1, 3, 11);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Test1')
-data.setCell(2, 2, 'tests.Test001')
-data.setCell(2, 3, 8);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Test11')
-data.setCell(3, 2, 'tests.Test2')
-data.setCell(3, 3, 6);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Test1')
-data.setCell(4, 2, 'tests.Test3')
-data.setCell(4, 3, 6);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Test3')
-data.setCell(5, 2, 'tests.Test001')
-data.setCell(5, 3, 3);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Test33')
-data.setCell(6, 2, 'tests.Test3')
-data.setCell(6, 3, 3);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Test21')
-data.setCell(7, 2, 'tests.Test2')
-data.setCell(7, 3, 2);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Test2')
-data.setCell(8, 2, 'tests.Test001')
-data.setCell(8, 3, 1);
+data.setCell(1, 1, 'LaunchGoogle')
+data.setCell(1, 2, 'tests.MockTest')
+data.setCell(1, 3, 155);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 66 ms</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -400,196 +289,49 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.MockTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">classSetUp</span>
+                <span class="method-name">classSetUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">methodSetup(public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException)</span>
+                <span class="method-start">4542 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LaunchGoogle</span>
+                <span class="method-start">4545 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">10127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">10385 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">classSetUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">classSetUp(ie)</span>
+                <span class="method-start">10676 ms</span>
               </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">classSetUp</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test2.Test11())</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test001.Test1())</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test3.Test1())</span>
-                <span class="method-start">20 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">Test11</span>
-                <span class="method-start">24 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LaunchGoogle</span>
+                <span class="method-start">17511 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test1</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">methodSetup(public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException)</span>
+                <span class="method-start">17511 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">17671 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">34 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">35 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test2.Test21())</span>
-                <span class="method-start">284 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Test21</span>
-                <span class="method-start">330 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">335 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test001.Test2())</span>
-                <span class="method-start">340 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test3.Test2())</span>
-                <span class="method-start">385 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test2</span>
-                <span class="method-start">385 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">387 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test2.Test31())</span>
-                <span class="method-start">418 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test001.Test3())</span>
-                <span class="method-start">450 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Test3</span>
-                <span class="method-start">450 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test31</span>
-                <span class="method-start">454 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Test2</span>
-                <span class="method-start">454 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">469 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">488 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test001</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">489 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.Test3</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">methodSetup(public void tests.Test3.Test33())</span>
-                <span class="method-start">576 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Test33</span>
-                <span class="method-start">576 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">580 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">17764 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
