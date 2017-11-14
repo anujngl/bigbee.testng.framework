@@ -3,12 +3,6 @@
   <listeners>
     <listener class-name="listeners.SuiteListener" />
   </listeners>
-  <test name="Mock Test 1" >
-  	<parameter name="browser" value="firefox"/>
-    <classes>
-       <class name="tests.MockTest" />
-    </classes>
-  </test>
   
     <test name="Mock Test 2" >
   	<parameter name="browser" value="ie"/>

@@ -17,7 +17,7 @@ public class MockTest extends TestBase {
 			testReporter.log(LogStatus.PASS, "Google is launched");
 			testReporter.log(LogStatus.INFO, "WebDriver launched the url https://www.google.co.in");
 		}else{
-			testReporter.log(LogStatus.FAIL, "Google is not launched");
+			testReporter.log(LogStatus.FAIL, "Google is not launched" + testReporter.addScreenCapture(SS.GetScreenshot(browser)));
 			testReporter.log(LogStatus.FAIL, testReporter.addScreenCapture(SS.GetScreenshot(browser)));
 			testReporter.log(LogStatus.INFO, "WebDriver failed to launch the url https://www.google.co.in");
 		}	
@@ -34,7 +34,7 @@ public class MockTest extends TestBase {
 			testReporter.log(LogStatus.PASS, "Search is successful");
 			testReporter.log(LogStatus.INFO, "Search functionality is working as expected");
 		}else{
-			testReporter.log(LogStatus.FAIL, "Search is not successful");
+			testReporter.log(LogStatus.FAIL, "Search is not successful " + testReporter.addScreenCapture(SS.GetScreenshot(browser)));
 			testReporter.log(LogStatus.FAIL, testReporter.addScreenCapture(SS.GetScreenshot(browser)));
 			testReporter.log(LogStatus.INFO, "Search functionality is not working as expected");
 		}	

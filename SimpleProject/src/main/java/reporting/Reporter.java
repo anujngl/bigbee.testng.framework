@@ -17,7 +17,6 @@ public class Reporter {
 	{
 		if(reporter == null)
 			reporter = new ExtentReports(filePath);
-			reporter.loadConfig(new File(System.getProperty("user.dir")+"/src/test/resources/extent-config.xml"));
 	}
 	
 	public static void createReporter(String filePath, boolean replaceExisting)

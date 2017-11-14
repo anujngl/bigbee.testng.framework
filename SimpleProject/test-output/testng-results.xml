@@ -1,51 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="18298" started-at="2017-11-13T17:15:29Z" finished-at="2017-11-13T17:15:47Z">
+  <suite name="Suite1" duration-ms="3815" started-at="2017-11-14T03:07:36Z" finished-at="2017-11-14T03:07:40Z">
     <groups>
     </groups>
-    <test name="Mock Test 1" duration-ms="10628" started-at="2017-11-13T17:15:29Z" finished-at="2017-11-13T17:15:40Z">
+    <test name="Mock Test 2" duration-ms="3815" started-at="2017-11-14T03:07:36Z" finished-at="2017-11-14T03:07:40Z">
       <class name="tests.MockTest">
-        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.MockTest@5c7fa833]" name="classSetUp" is-config="true" duration-ms="4519" started-at="2017-11-13T22:45:29Z" finished-at="2017-11-13T22:45:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.MockTest@5c7fa833]" name="methodSetup" is-config="true" duration-ms="3" started-at="2017-11-13T22:45:34Z" finished-at="2017-11-13T22:45:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="LaunchGoogle()[pri:0, instance:tests.MockTest@5c7fa833]" name="LaunchGoogle" duration-ms="5578" started-at="2017-11-13T22:45:34Z" description="This is a mock test to verify the framework" finished-at="2017-11-13T22:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchGoogle -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.MockTest@5c7fa833]" name="afterMethod" is-config="true" duration-ms="257" started-at="2017-11-13T22:45:39Z" finished-at="2017-11-13T22:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.MockTest@5c7fa833]" name="closeDriver" is-config="true" duration-ms="239" started-at="2017-11-13T22:45:39Z" finished-at="2017-11-13T22:45:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- tests.MockTest -->
-    </test> <!-- Mock Test 1 -->
-    <test name="Mock Test 2" duration-ms="7619" started-at="2017-11-13T17:15:40Z" finished-at="2017-11-13T17:15:47Z">
-      <class name="tests.MockTest">
-        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.MockTest@3ffc5af1]" name="classSetUp" is-config="true" duration-ms="6835" started-at="2017-11-13T22:45:40Z" finished-at="2017-11-13T22:45:46Z">
+        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.MockTest@5c7fa833]" name="classSetUp" is-config="true" duration-ms="2844" started-at="2017-11-14T08:37:36Z" finished-at="2017-11-14T08:37:39Z">
           <params>
             <param index="0">
               <value>
@@ -56,25 +18,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="FAIL" signature="LaunchGoogle()[pri:0, instance:tests.MockTest@3ffc5af1]" name="LaunchGoogle" duration-ms="155" started-at="2017-11-13T22:45:46Z" description="This is a mock test to verify the framework" finished-at="2017-11-13T22:45:47Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.MockTest@5c7fa833]" name="methodSetup" is-config="true" duration-ms="2" started-at="2017-11-14T08:37:39Z" finished-at="2017-11-14T08:37:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- methodSetup -->
+        <test-method status="FAIL" signature="LaunchGoogle()[pri:0, instance:tests.MockTest@5c7fa833]" name="LaunchGoogle" duration-ms="176" started-at="2017-11-14T08:37:39Z" description="This is a mock test to verify the framework" finished-at="2017-11-14T08:37:39Z">
           <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[Currently focused window has been closed.
+              <![CDATA[Unable to get browser
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'LAPTOP-RVMC81Q7', ip: '192.168.43.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41819/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
-*** Element info: {Using=id, value=lst-ib}]]>
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:26987/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fb0d9158-e8f3-4138-834d-ab05c0b24f43]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: Currently focused window has been closed.
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Unable to get browser
 Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:01:39.354Z'
 System info: host: 'LAPTOP-RVMC81Q7', ip: '192.168.43.179', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41819/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
-*** Element info: {Using=id, value=lst-ib}
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:26987/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fb0d9158-e8f3-4138-834d-ab05c0b24f43
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -85,11 +56,10 @@ Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:416)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at tests.MockTest.LaunchGoogle(MockTest.java:25)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:657)
+	at org.openqa.selenium.ie.InternetExplorerDriver.getScreenshotAs(InternetExplorerDriver.java:235)
+	at utils.ScreenCapture.GetScreenshot(ScreenCapture.java:17)
+	at tests.MockTest.LaunchGoogle(MockTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -121,22 +91,11 @@ Session ID: 843cb225-8db6-4f13-ad71-3084cccb72c6
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchGoogle -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method)[pri:0, instance:tests.MockTest@3ffc5af1]" name="methodSetup" is-config="true" duration-ms="0" started-at="2017-11-13T22:45:46Z" finished-at="2017-11-13T22:45:46Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.MockTest.LaunchGoogle() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.MockTest@3ffc5af1]" name="afterMethod" is-config="true" duration-ms="93" started-at="2017-11-13T22:45:47Z" finished-at="2017-11-13T22:45:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.MockTest@5c7fa833]" name="afterMethod" is-config="true" duration-ms="236" started-at="2017-11-14T08:37:39Z" finished-at="2017-11-14T08:37:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.MockTest@3ffc5af1]" name="closeDriver" is-config="true" duration-ms="530" started-at="2017-11-13T22:45:47Z" finished-at="2017-11-13T22:45:47Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.MockTest@5c7fa833]" name="closeDriver" is-config="true" duration-ms="533" started-at="2017-11-14T08:37:39Z" finished-at="2017-11-14T08:37:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->

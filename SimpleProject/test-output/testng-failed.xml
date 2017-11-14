@@ -10,13 +10,9 @@
       <class name="tests.MockTest">
         <methods>
           <include name="methodSetup"/>
-          <include name="methodSetup"/>
-          <include name="classSetUp"/>
           <include name="classSetUp"/>
           <include name="LaunchGoogle"/>
           <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="afterMethod"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- tests.MockTest -->
