@@ -4,42 +4,19 @@
   <listeners>
     <listener class-name="listeners.SuiteListener"/>
   </listeners>
-  <test name="Mock Test 7(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+  <test name="Mock Test 2(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <parameter name="testId" value="TEST01"/>
     <classes>
-      <class name="tests.MockTest">
+      <class name="tests.Test01">
         <methods>
           <include name="methodSetup"/>
-          <include name="methodSetup"/>
-          <include name="classSetUp"/>
-          <include name="classSetUp"/>
           <include name="classSetUp"/>
           <include name="LaunchGoogle"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
           <include name="afterMethod"/>
-          <include name="afterMethod"/>
+          <include name="closeDriver"/>
         </methods>
-      </class> <!-- tests.MockTest -->
+      </class> <!-- tests.Test01 -->
     </classes>
-  </test> <!-- Mock Test 7(failed) -->
-  <test name="Mock Test 4(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="tests.MockTest">
-        <methods>
-          <include name="methodSetup"/>
-          <include name="methodSetup"/>
-          <include name="classSetUp"/>
-          <include name="classSetUp"/>
-          <include name="classSetUp"/>
-          <include name="LaunchGoogle"/>
-          <include name="closeDriver"/>
-          <include name="closeDriver"/>
-          <include name="afterMethod"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- tests.MockTest -->
-    </classes>
-  </test> <!-- Mock Test 4(failed) -->
+  </test> <!-- Mock Test 2(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

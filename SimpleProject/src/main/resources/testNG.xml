@@ -4,25 +4,11 @@
     <listener class-name="listeners.SuiteListener" />
   </listeners>
   
-    <test name="Mock Test 2" >
+  <test name="Mock Test 2" >
   	<parameter name="browser" value="ie"/>
+  	<parameter name="testId" value="TEST01"/>
     <classes>
-       <class name="tests.MockTest" />
-    </classes>
+       <class name="tests.Test01" />
+  </classes>
   </test>
-  
-      <test name="Mock Test 4" >
-  	<parameter name="browser" value="chrome"/>
-    <classes>
-       <class name="tests.MockTest" />
-    </classes>
-  </test>
-  
-      <test name="Mock Test 7" >
-  	<parameter name="browser" value="firefox"/>
-    <classes>
-       <class name="tests.MockTest" />
-    </classes>
-  </test>
-  
 </suite>

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
 
-public class MockTest extends TestBase {
+public class MockTest extends EnvironmentSetup {
 
 	@Test(testName = "Launch Google & Search some text", description = "This is a mock test to verify the framework")
 	public void LaunchGoogle() throws InterruptedException {
