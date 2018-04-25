@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
   <listeners>
     <listener class-name="listeners.SuiteListener"/>
   </listeners>
-  <test name="Mock Test 2(failed)">
-    <parameter name="browser" value="ie"/>
+  <test name="Mock Test 7(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="tests.MockTest">
         <methods>
           <include name="methodSetup"/>
+          <include name="methodSetup"/>
+          <include name="classSetUp"/>
+          <include name="classSetUp"/>
           <include name="classSetUp"/>
           <include name="LaunchGoogle"/>
           <include name="closeDriver"/>
+          <include name="closeDriver"/>
+          <include name="afterMethod"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- tests.MockTest -->
     </classes>
-  </test> <!-- Mock Test 2(failed) -->
+  </test> <!-- Mock Test 7(failed) -->
+  <test name="Mock Test 4(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.MockTest">
+        <methods>
+          <include name="methodSetup"/>
+          <include name="methodSetup"/>
+          <include name="classSetUp"/>
+          <include name="classSetUp"/>
+          <include name="classSetUp"/>
+          <include name="LaunchGoogle"/>
+          <include name="closeDriver"/>
+          <include name="closeDriver"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.MockTest -->
+    </classes>
+  </test> <!-- Mock Test 4(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

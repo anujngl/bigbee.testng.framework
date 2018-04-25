@@ -18,11 +18,25 @@
 	    <version>6.10</version>
 	    <scope>test</scope>
 	</dependency>
+<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+<dependency>
+    <groupId>org.freemarker</groupId>
+    <artifactId>freemarker</artifactId>
+    <version>2.3.28</version>
+</dependency>
+
 	<dependency>
     	<groupId>com.relevantcodes</groupId>
     	<artifactId>extentreports</artifactId>
     	<version>2.41.2</version>
 	</dependency>
+	
+	<!-- pom.xml -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>3.1.5</version>
+</dependency>
 	    <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>

@@ -1,6 +1,5 @@
 package reporting;
 
-import java.io.File;
 import java.util.Locale;
 
 import com.relevantcodes.extentreports.DisplayOrder;

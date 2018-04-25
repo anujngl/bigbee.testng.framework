@@ -23,7 +23,7 @@ public class MockTest extends TestBase {
 		}	
 		
 		browser.findElement(By.id("lst-ib")).sendKeys("TestNG is the best!!!");
-		testReporter.log(LogStatus.INFO, "Typing the text TestNG is the best!!!");
+		testReporter.log(LogStatus.INFO, "Typing the text TestNG is the best");
 		
 		browser.findElement(By.id("lst-ib")).sendKeys(Keys.ENTER);
 		testReporter.log(LogStatus.INFO, "Pressing Enter button");
