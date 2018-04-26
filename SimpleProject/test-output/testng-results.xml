@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="17003" started-at="2018-04-25T15:13:31Z" finished-at="2018-04-25T15:13:48Z">
+  <suite name="Suite1" duration-ms="106766" started-at="2018-04-26T10:54:38Z" finished-at="2018-04-26T10:56:25Z">
     <groups>
     </groups>
-    <test name="Mock Test 2" duration-ms="17003" started-at="2018-04-25T15:13:31Z" finished-at="2018-04-25T15:13:48Z">
+    <test name="Mock Test 2" duration-ms="106766" started-at="2018-04-26T10:54:38Z" finished-at="2018-04-26T10:56:25Z">
       <class name="tests.Test01">
-        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.Test01@457e2f02]" name="classSetUp" is-config="true" duration-ms="1969" started-at="2018-04-25T20:43:31Z" finished-at="2018-04-25T20:43:33Z">
+        <test-method status="PASS" signature="classSetUp(java.lang.String)[pri:0, instance:tests.Test01@2e4b8173]" name="classSetUp" is-config="true" duration-ms="2332" started-at="2018-04-26T16:24:38Z" finished-at="2018-04-26T16:24:41Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classSetUp -->
-        <test-method status="PASS" signature="LaunchGoogle()[pri:0, instance:tests.Test01@457e2f02]" name="LaunchGoogle" duration-ms="14322" started-at="2018-04-25T20:43:33Z" description="This is a mock test to verify the framework" finished-at="2018-04-25T20:43:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchGoogle -->
-        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:tests.Test01@457e2f02]" name="methodSetup" is-config="true" duration-ms="0" started-at="2018-04-25T20:43:33Z" finished-at="2018-04-25T20:43:33Z">
+        <test-method status="PASS" signature="methodSetup(java.lang.reflect.Method, java.lang.String)[pri:0, instance:tests.Test01@2e4b8173]" name="methodSetup" is-config="true" duration-ms="2" started-at="2018-04-26T16:24:41Z" finished-at="2018-04-26T16:24:41Z">
           <params>
             <param index="0">
               <value>
@@ -38,11 +34,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodSetup -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test01@457e2f02]" name="afterMethod" is-config="true" duration-ms="156" started-at="2018-04-25T20:43:47Z" finished-at="2018-04-25T20:43:47Z">
+        <test-method status="PASS" signature="LaunchGoogle()[pri:0, instance:tests.Test01@2e4b8173]" name="LaunchGoogle" duration-ms="103652" started-at="2018-04-26T16:24:41Z" description="This is a mock test to verify the framework" finished-at="2018-04-26T16:26:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchGoogle -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Test01@2e4b8173]" name="afterMethod" is-config="true" duration-ms="228" started-at="2018-04-26T16:26:24Z" finished-at="2018-04-26T16:26:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.Test01@457e2f02]" name="closeDriver" is-config="true" duration-ms="556" started-at="2018-04-25T20:43:47Z" finished-at="2018-04-25T20:43:48Z">
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:tests.Test01@2e4b8173]" name="closeDriver" is-config="true" duration-ms="535" started-at="2018-04-26T16:26:24Z" finished-at="2018-04-26T16:26:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
